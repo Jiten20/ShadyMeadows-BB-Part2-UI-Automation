@@ -40,9 +40,9 @@ jobs:
           name: screenshots
           path: cypress training/cypress/screenshots
 
-      - name: Upload Videos
+      - name: Upload Test Report
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: videos
-          path: cypress training/cypress/videos
+         name: mochawesome-report
+         path: cypress/reports
