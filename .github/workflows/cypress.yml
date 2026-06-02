@@ -16,7 +16,7 @@ jobs:
 
     defaults:
       run:
-        working-directory: ./cypress training
+        working-directory: ./
 
     steps:
       - name: Checkout Repository
@@ -38,7 +38,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: screenshots
-          path: cypress training/cypress/screenshots
+          path: cypress/screenshots
 
       - name: Upload Test Report
         if: always()
