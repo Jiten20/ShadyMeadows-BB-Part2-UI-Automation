@@ -87,6 +87,7 @@ The authentication flow has been validated using both positive and negative scen
 | Valid credentials | User redirected to Admin Dashboard |
 
 These tests ensure that unauthorized users cannot access the administration area and that authentication behaves as expected under invalid input conditions.
+
 ---
 
 ## ⚙️ Setup & Installation
