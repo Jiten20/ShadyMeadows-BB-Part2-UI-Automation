@@ -305,7 +305,7 @@ All test data lives in fixtures — no hardcoded strings in spec files.
 
 | # | Area | Description | Severity |
 |---|------|-------------|----------|
-| 1 | Admin login — empty fields | Clicking Login with empty username/password should highlight in red. The form silently stays on the login page providing invalid credentials to the user. | Low |
+| 1 | Admin login — empty fields | Clicking Login with empty username/password should highlight in red. The form silently stays on the login page providing 'invalid credentials' message to the user. | Low |
 | 2 | Contact form | No field-level validation feedback is shown until full form submission is attempted. Individual field errors are not displayed inline. | Low |
 
 ---
