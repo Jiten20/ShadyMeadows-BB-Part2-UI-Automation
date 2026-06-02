@@ -24,6 +24,11 @@ describe('Dashboard Page', () => {
         dashboardPage.verifyHeader();
     });
 
+    it('should show an error message when invalid credentials are used', function () {
+        loginPage.loginWith('wronguser', 'wrongpassword');
+        loginPage.assertLoginErrorVisible();
+    });
+
     it('should navigate to the Messages view via the nav link', function () {
         loginPage.loginWithDefaultCredentials();
         dashboardPage.selectMessages();
