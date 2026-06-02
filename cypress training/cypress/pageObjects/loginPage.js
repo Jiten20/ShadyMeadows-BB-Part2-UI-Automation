@@ -3,7 +3,8 @@ class LoginPage {
     elements = {
         usernameInput: () => cy.get('#username'),
         passwordInput: () => cy.get('#password'),
-        loginButton: () => cy.get('#doLogin')
+        loginButton: () => cy.get('#doLogin'),
+        loginError:    () => cy.get('.alert.alert-danger, .alert-danger')
     };
     
     /**
@@ -18,6 +19,13 @@ class LoginPage {
         return this;
     }
 
+   // ── Assertions ────────────────────────────────────────────────────────────
+
+    assertLoginErrorVisible() {
+        this.elements.loginError().should('be.visible');
+        return this;
+    }
+
     /**
      * Login using the credentials stored in cypress.config.js env vars.
      * This is the standard login used by most tests.
@@ -28,6 +36,5 @@ class LoginPage {
             Cypress.env('adminPassword')
         );
     }
-
 }
 export default new LoginPage();
