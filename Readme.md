@@ -1,5 +1,7 @@
 # Shady Meadows B&B — Cypress UI Automation Suite
 
+![Cypress UI Automation](https://github.com/Jiten20/ShadyMeadows-BB-Part2-UI-Automation/actions/workflows/cypress.yml/badge.svg)
+
 End-to-end UI automation for [automationintesting.online](https://automationintesting.online) built with **Cypress 15** using the **Page Object Model (POM)** design pattern.
 
 ---
